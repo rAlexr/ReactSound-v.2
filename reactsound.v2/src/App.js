@@ -1,20 +1,10 @@
-import NavBar from "components/navbar";
-import { useState, useEffect } from "react";
-import { getData } from "./shared/js";
+import Layout from "containers/layout";
 
 function App() {
-  // const [mydata, setmyData] = useState({});
-
-  // useEffect(() => {
-  //   getData().then((res) => setmyData(res.data));
-
-  //   // eslint-disable-next-line
-  // }, []);
-
   return (
-    <div>
-     <NavBar />
-    </div>
+    <>
+      <Layout />
+    </>
   );
 }
 

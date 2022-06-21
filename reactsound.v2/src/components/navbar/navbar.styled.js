@@ -20,6 +20,7 @@ export const NavContainer = styled.div`
     }
 
   @media ${device.laptop} {
+    padding: 40px 100px;
     & svg:nth-child(1) {
         display: none;
     }
@@ -27,6 +28,14 @@ export const NavContainer = styled.div`
     & svg:nth-child(2) {
         position: initial;
     }
+  }
+
+  @media ${device.laptopL} {
+    padding: 40px 150px;
+  }
+
+  @media ${device.desktopL} {
+    padding: 40px 200px;
   }
 
 `;
