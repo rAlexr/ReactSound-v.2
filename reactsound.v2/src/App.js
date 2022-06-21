@@ -1,20 +1,19 @@
+import NavBar from "components/navbar";
 import { useState, useEffect } from "react";
-import LinksTab from "./components/linkstab";
 import { getData } from "./shared/js";
 
-
 function App() {
-  const [mydata, setmyData] = useState({});
+  // const [mydata, setmyData] = useState({});
 
-  useEffect(() => {
-    getData().then((res) => setmyData(res.data));
+  // useEffect(() => {
+  //   getData().then((res) => setmyData(res.data));
 
-    // eslint-disable-next-line
-  }, []);
+  //   // eslint-disable-next-line
+  // }, []);
 
   return (
     <div>
-      <LinksTab />
+     <NavBar />
     </div>
   );
 }
