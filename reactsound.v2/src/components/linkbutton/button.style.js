@@ -19,6 +19,7 @@ export const LinkButtonStyle = styled(Link)`
   font-size: 13px;
   z-index: 10;
   margin: 0 0 10px 0;
+  border: ${(props) => (props.orange ? `1px solid ${primaryOrange}` : "1px solid black")};
 
   &:hover {
     background-color: ${(props) => props.orange ? secondaryOrange : "transparent"};
