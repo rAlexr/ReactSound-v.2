@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device, colors } from "shared/styled/varaibles";
 
-const{ secondaryGray, primaryOrange } = colors;
+const { secondaryGray, primaryOrange } = colors;
 
 export const LinksContainer = styled.div`
   background-color: black;
@@ -20,12 +20,11 @@ export const LinksContainer = styled.div`
     letter-spacing: 2px;
 
     &:hover {
-        color: ${primaryOrange};
+      color: ${primaryOrange};
     }
 
     @media ${device.laptopL} {
-        font-size: 15px;
+      font-size: 15px;
     }
-
-}
+  }
 `;
