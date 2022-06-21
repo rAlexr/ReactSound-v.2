@@ -101,6 +101,10 @@ export const FirstBannerTitle = styled.h2`
     font-size: 45px;
     margin-bottom: 0;
   }
+
+  @media ${device.laptopL} {
+    font-size: 75px;
+  }
 `;
 
 export const FirstBannerParagraph = styled.p`
@@ -109,7 +113,7 @@ export const FirstBannerParagraph = styled.p`
 
   @media ${device.laptop} {
     line-height: 25px;
-    font-size: 20px;
     max-width: 400px;
+    font-weight: 500;
   }
 `;
