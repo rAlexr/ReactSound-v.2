@@ -1,6 +1,8 @@
+import { Outlet } from "react-router-dom";
+
+import Footer from "components/footer";
 import MarketingBanner from "components/marketingbanner";
 import NavBar from "components/navbar";
-import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -8,6 +10,7 @@ const Layout = () => {
       <NavBar />
       <Outlet />
       <MarketingBanner />
+      <Footer />
     </>
   );
 };
