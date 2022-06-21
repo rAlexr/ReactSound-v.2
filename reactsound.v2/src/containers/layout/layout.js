@@ -1,12 +1,11 @@
-import Hero from "components/hero";
-import HeroText from "components/herotext";
 import NavBar from "components/navbar";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
     <>
       <NavBar />
-      <Hero />
+      <Outlet />
     </>
   );
 };

@@ -6,14 +6,14 @@ import {
   HeroTextContainer,
 } from "./herotext.style";
 
-const HeroText = ({ promo = "", header = "", info = "" }) => {
+const HeroText = ({ promo = "", header = "", info = "", btncolor= "", link="", display='' }) => {
   return (
     <>
         <HeroTextContainer>
           <HeroPromoParagraph>{promo}</HeroPromoParagraph>
           <HeroHeader>{header}</HeroHeader>
           <HeroInfoParagraph>{info}</HeroInfoParagraph>
-          <LinkButton color={'orange'} link={'/'} />
+          <LinkButton color={btncolor} link={link} />
         </HeroTextContainer>
     </>
   );

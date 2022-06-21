@@ -4,6 +4,7 @@ import { ReactComponent as Cart } from "shared/svg/cart.svg";
 import { NavContainer } from "./navbar.styled";
 import LinksTab from "components/linkstab";
 
+
 const NavBar = () => {
   return (
     <>
@@ -13,7 +14,6 @@ const NavBar = () => {
         <LinksTab />
         <Cart />
       </NavContainer>
-      {/* //outlet */}
     </>
   );
 };
