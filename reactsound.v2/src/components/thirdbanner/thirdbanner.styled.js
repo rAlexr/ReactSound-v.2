@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { device, colors } from "shared/styled/varaibles";
 
 export const ThirdBannerContainer = styled.div`
-margin: 0 0 20px 0;
-@media ${device.tablet} {
+  margin: 0 0 20px 0;
+  @media ${device.tablet} {
     display: flex;
     align-items: center;
   }
