@@ -1,6 +1,7 @@
 import FirstBanner from "components/firstbanner";
 import Hero from "components/hero";
 import SecondBanner from "components/secondbanner";
+import ThirdBanner from "components/thirdbanner";
 
 
 import ThumbNailGirdle from "components/thumbnailgirdle";
@@ -14,6 +15,7 @@ const Home = () => {
         <ThumbNailGirdle />
         <FirstBanner />
         <SecondBanner />
+        <ThirdBanner />
       </PaddingContainer>
     </>
   );
