@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { device } from "shared/styled/varaibles";
+import { device, colors } from "shared/styled/varaibles";
 
 export const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 40px;
   background-color: black;
-  border-bottom: 1px solid #d87d4a;
+  border-bottom: 1px solid ${colors.secondaryGray};
   
   svg {
     fill: white;
