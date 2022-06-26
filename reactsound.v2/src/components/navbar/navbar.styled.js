@@ -6,6 +6,7 @@ export const NavContainer = styled.div`
   justify-content: space-between;
   padding: 40px;
   background-color: black;
+  border-bottom: 1px solid #d87d4a;
   
   svg {
     fill: white;

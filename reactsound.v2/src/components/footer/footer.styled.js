@@ -70,10 +70,11 @@ export const FooterMenu = styled.div`
     }
 
 `;
+
 export const FooterText = styled.p`
   font-size: 15px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 20px;
   color: ${colors.secondaryGray};
 
@@ -82,7 +83,7 @@ export const FooterText = styled.p`
   }
 
   @media ${device.laptop} {
-    max-width: 600px;
+    max-width: 700px;
     font-size: 17px;
 }
 

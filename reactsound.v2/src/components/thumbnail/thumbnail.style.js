@@ -64,17 +64,19 @@ export const ThumbWraper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  * {
+    &:hover {
+      color: white;
+    }
+  }
 `;
 export const ThumbLink = styled(Link)`
   font-size: 13px;
   text-transform: uppercase;
   padding: 1px 10px 0 0;
   color: ${primaryOrange};
-
-  &:hover {
-    color: ${primaryOrange};
-    font-weight: bold;
-  }
+  font-weight: 500;
 `;
 
 export const SvgContainer = styled.div``;
