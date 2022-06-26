@@ -10,6 +10,11 @@ export const NavContainer = styled.div`
   
   svg {
     fill: white;
+
+    &:hover {
+      fill: #d87d4a;
+      cursor: pointer;
+    }
   }
 
   @media ${device.tablet} {

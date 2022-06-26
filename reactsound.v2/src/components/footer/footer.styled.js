@@ -116,6 +116,7 @@ export const FooterSocialsContainer = styled.div`
 
     &:hover {
       fill: ${colors.primaryOrange};
+      cursor: pointer;
     }
   }
 `;
