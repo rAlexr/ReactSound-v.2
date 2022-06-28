@@ -1,10 +1,13 @@
-import CategoryHeader from "components/categoryheader";
-import CategoryText from "components/categorytext";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getData } from "shared/js";
 
+import CategoryHeader from "components/categoryheader";
+import CategoryText from "components/categorytext";
+import ThumbNailGirdle from "components/thumbnailgirdle";
+
 import { RevertCont } from "./category.styled";
+import { PaddingContainer } from "pages/home/home.styled";
 
 const Category = () => {
   const [mydata, setmyData] = useState();
@@ -14,9 +17,7 @@ const Category = () => {
     getData(params.id).then((response) => setmyData(response.data));
 
     // eslint-disable-next-line
-  }, []);
-
-  console.log(mydata?.map((item) => console.log(item.img[0].mobile)));
+  }, [params]);
 
   return (
     <>
@@ -30,10 +31,12 @@ const Category = () => {
             desktop={item?.img[0]?.desktop}
             title={item?.title}
             description={item?.description}
-            // make a JSON path for products ~!
           />
         ))}
       </RevertCont>
+      <PaddingContainer>
+        <ThumbNailGirdle />
+      </PaddingContainer>
     </>
   );
 };

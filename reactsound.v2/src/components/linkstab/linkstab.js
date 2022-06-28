@@ -5,9 +5,9 @@ const LinksTab = () => {
   return (
     <LinksContainer>
       <Link to={"/"}>home</Link>
-      <Link to={"/"}>headphones</Link>
-      <Link to={"/"}>speakers</Link>
-      <Link to={"/"}>earphones</Link>
+      <Link to={"phones"}>headphones</Link>
+      <Link to={"speak"}>speakers</Link>
+      <Link to={"earp"}>earphones</Link>
     </LinksContainer>
   );
 };

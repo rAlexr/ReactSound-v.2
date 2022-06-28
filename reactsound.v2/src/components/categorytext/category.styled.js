@@ -53,7 +53,6 @@ export const TextContainer = styled.div`
   @media ${device.laptop} {
     align-items: start;
     text-align: start;
-    
   }
 `;
 

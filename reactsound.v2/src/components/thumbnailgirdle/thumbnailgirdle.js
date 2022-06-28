@@ -9,9 +9,9 @@ import earbuds from "shared/assets/thumbnail/thumbnail-earphones.png";
 const ThumbNailGirdle = () => {
     return(
         <Girdle>
-            <ThumbNail link={'/'} img={headphones} header={'headphones'} paragraph={'shop'} svg={<svg width="8" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.322 1l5 5-5 5" stroke="#D87D4A" strokeWidth="2" fill="none" fillRule="evenodd"/></svg>}/> 
-            <ThumbNail link={'/'} img={speakers} header={'headphones'} paragraph={'shop'} svg={<svg width="8" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.322 1l5 5-5 5" stroke="#D87D4A" strokeWidth="2" fill="none" fillRule="evenodd"/></svg>}/> 
-            <ThumbNail link={'/'} img={earbuds} header={'headphones'} paragraph={'shop'} svg={<svg width="8" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.322 1l5 5-5 5" stroke="#D87D4A" strokeWidth="2" fill="none" fillRule="evenodd"/></svg>}/> 
+            <ThumbNail link={'phones'} img={headphones} header={'headphones'} paragraph={'shop'} svg={<svg width="8" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.322 1l5 5-5 5" stroke="#D87D4A" strokeWidth="2" fill="none" fillRule="evenodd"/></svg>}/> 
+            <ThumbNail link={'speak'} img={speakers} header={'speakers'} paragraph={'shop'} svg={<svg width="8" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.322 1l5 5-5 5" stroke="#D87D4A" strokeWidth="2" fill="none" fillRule="evenodd"/></svg>}/> 
+            <ThumbNail link={'earp'} img={earbuds} header={'earphones'} paragraph={'shop'} svg={<svg width="8" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1.322 1l5 5-5 5" stroke="#D87D4A" strokeWidth="2" fill="none" fillRule="evenodd"/></svg>}/> 
         </Girdle>
     );
 }
