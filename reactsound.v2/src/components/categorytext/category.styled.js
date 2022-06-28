@@ -9,6 +9,7 @@ export const CategoryTextMainContainer = styled.div`
   @media ${device.laptop} {
     padding: 40px 100px;
     display: flex;
+    justify-content: space-evenly;
   }
 
   @media ${device.laptopL} {
@@ -36,15 +37,8 @@ export const CategoryTextImg = styled.div`
 
   @media ${device.laptop} {
     background-image: url(${(props) => props.desktop});
-    flex: 1;
-  }
-
-  @media ${device.laptopL} {
     height: 500px;
-  }
-
-  @media ${device.desktopL} {
-    height: 600px;
+    width: 600px;
   }
 `;
 
@@ -57,18 +51,9 @@ export const TextContainer = styled.div`
   text-align: center;
 
   @media ${device.laptop} {
-    flex: 1;
     align-items: start;
     text-align: start;
-    padding: 0 0 0 50px;
-  }
-
-  @media ${device.laptopL} {
-    padding: 0 0 0 100px;
-  }
-
-  @media ${device.desktopL} {
-    padding: 0 0 0 200px;
+    
   }
 `;
 
