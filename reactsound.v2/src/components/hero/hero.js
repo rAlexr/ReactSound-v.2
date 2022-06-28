@@ -16,6 +16,7 @@ const Hero = () => {
           info={
             "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast."
           }
+          link={'phones'}
         />
       </HeroColTwo>
     </HeroContainer>

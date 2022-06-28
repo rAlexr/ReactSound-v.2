@@ -7,9 +7,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index={true} element={<Home />} />
-          <Route path={'category'} element={<Category />} />
+          <Route element={<Category />}>
+            <Route path={":id"} element={<Category />} />
+            <Route path={"headphones"} element={<Category />} />
+          </Route>
         </Route>
       </Routes>
     </>
