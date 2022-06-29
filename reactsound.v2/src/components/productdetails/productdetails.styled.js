@@ -6,11 +6,11 @@ import { colors } from "shared/styled/varaibles";
 const { primaryOrange, secondaryGray } = colors;
 
 export const DetailsContainer = styled.div`
-    padding: 40px 0;
+  padding: 40px 0;
 
-    @media ${device.tablet} {
-        display: flex;    
-    }
+  @media ${device.tablet} {
+    display: flex;
+  }
 `;
 
 export const DetailsImage = styled.div`
@@ -40,7 +40,7 @@ export const DetailsImage = styled.div`
 export const ContentDetailsWrap = styled.div`
   @media ${device.tablet} {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     flex: 2;
     justify-content: center;
     padding: 0 0 0 100px;
@@ -73,7 +73,7 @@ export const DetailsTitle = styled.h1`
 export const DetailsText = styled.p`
   margin: 16px 0 20px 0;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 23px;
   color: ${secondaryGray};
 
   @media ${device.tablet} {

@@ -1,4 +1,5 @@
 import AmountButton from "components/amountbutton";
+
 import {
   ContentDetailsWrap,
   DetailsAmountContainer,
@@ -10,26 +11,25 @@ import {
   DetailsTitle,
 } from "./productdetails.styled";
 
-import mobile from "shared/assets/product-xx59-headphones/mobile/image-product.jpg";
-import tablet from "shared/assets/product-xx59-headphones/tablet/image-product.jpg";
-import desktop from "shared/assets/product-xx59-headphones/desktop/image-product.jpg";
-
-const ProductDetails = () => {
+const ProductDetails = ({
+  mobile,
+  tablet,
+  desktop,
+  promo = undefined ? "" : "new product",
+  title = "",
+  details = "",
+  price = "",
+}) => {
   return (
     <>
       <DetailsContainer>
         <DetailsImage mobile={mobile} tablet={tablet} desktop={desktop} />
         <ContentDetailsWrap>
-          <DetailsPromo>new product</DetailsPromo>
-          <DetailsTitle>YX1 WIRELESS EARPHONES</DetailsTitle>
-          <DetailsText>
-            Tailor your listening experience with bespoke dynamic drivers from
-            the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound
-            even in noisy environments with its active noise cancellation
-            feature.
-          </DetailsText>
+          <DetailsPromo>{promo}</DetailsPromo>
+          <DetailsTitle>{title}</DetailsTitle>
+          <DetailsText>{details}</DetailsText>
           <DetailsAmountContainer>
-            <DetailsPrice>$ 10</DetailsPrice>
+            <DetailsPrice>{price}</DetailsPrice>
             <AmountButton />
           </DetailsAmountContainer>
         </ContentDetailsWrap>

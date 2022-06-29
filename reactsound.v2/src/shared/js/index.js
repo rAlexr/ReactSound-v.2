@@ -12,3 +12,4 @@ const baseAPI = axios.create({ timeout: 60000 });
 
 export const getData = async (data) =>
   baseAPI.get(window.location.origin + "/json/" + data + ".json");
+
